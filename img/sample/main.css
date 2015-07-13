@@ -1,0 +1,40 @@
+body {
+    background: #999;
+}
+
+header h1 {
+    color: black;
+    margin: 0;
+    color: aliceblue;
+}
+
+.row {
+    clear: both;
+}
+
+.col1 {
+    background: aqua;
+    width: 31%;
+    margin: .5%;
+    padding: 5px .5%;
+    border-radius: 5px;
+    float: left;
+}
+
+.col2 {
+    background: violet;
+    width: 15%;
+    margin: .5%;
+    padding: 5px .5%;
+    border-radius: 5px;
+    float: left;
+}
+
+.col3 {
+    background: teal;
+    width: 25%;
+    margin: .5%;
+    padding: 5px .5%;
+    border-radius: 5px;
+    float: left;
+}

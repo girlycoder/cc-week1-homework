@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title> Mario Page</title>
+    <link href="css/mario.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+    <div id="wrapper">
+        <div id="banner">
+            <img src="http://i.ytimg.com/vi/26_u4DYhr9g/maxresdefault.jpg">
+        </div>
+        <header>
+
+            <h1><strong>MARIO'S PEST CONTROL</strong></h1>
+
+        </header>
+
+        <div id="container">
+            <div class="col">
+                <h2 class="name">Goomba</h2>
+
+                <img class="img-circle" src="img/goomba.jpeg" style="max-width:100%">
+                <br />
+                <input placeholder="5 coins" id="fivecoins">
+                <br />
+                <input placeholder="# Goomba's" id="num1">
+                <br>
+
+                <button id="multiply1">Total Cost</button>
+                <h2 id="total1"></h2>
+                <h2>Description</h2>
+                <p>Goombas are actually traitors who've defected from the Mushroom Kingdom's forces. They're a slow and predictable nuisance, as they always try to wander into your path. </p>
+
+            </div>
+
+
+
+            <div class=" col ">
+                <h2 class="name">Bob-omb</h2>
+
+                <img class="img-circle" src="img/bob-ombs.jpeg
+                                             " />
+                <br />
+                <input placeholder="7 coins" id="sevencoins" />
+                <br />
+                <input placeholder="# Bob-omb" id="num2" />
+                <br>
+                <button id="multiply2">Total Cost</button>
+                <h2 id="total2"></h2>
+                <h2>Description</h2>
+                <p>When grabbed and thrown, this item explodes, but if left alone, it will start walking around until its timer reaches zero... Beware!</p>
+            </div>
+
+            <div class="col ">
+                <h2 class="name">Cheeps</h2>
+
+                <img class="img-circle" src="img/cheep.jpg" />
+                <br />
+                <input placeholder="11 coins" id="elevencoins" />
+                <br />
+                <input placeholder="# Cheep-cheeps" id="num3" />
+                <br>
+
+                <button id="multiply3">Total Cost</button>
+                <h2 id="total3"></h2>
+                <h2>Description</h2>
+                <p>There are many different species of Cheep Cheeps, and they come in different colors, including red, yellow and green.They are found mostly in the water but they can jump out of the water. Cheep-cheeps have fins shaped like wings and may attack above the surface of the water by jumping out in an arc!</p>
+            </div>
+        </div>
+
+
+        <div id="footer">Mario_pestcontrol@nintendoworld.com
+            <br /> 10 Rockefeller Plaza, New York, NY 10020
+            <br />Mario.terminex.net
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("multiply1").addEventListener("click", function (event) {
+            var fivecoins = parseInt(document.getElementById("fivecoins").value);
+            var numberX = parseInt(document.getElementById("num1").value);
+
+            document.getElementById('total1').innerHTML = (fivecoins * numberX);
+        });
+
+        document.getElementById("multiply2").addEventListener("click", function (event) {
+            var sevencoins = parseInt(document.getElementById("sevencoins").value);
+            var numberY = parseInt(document.getElementById("num2").value);
+
+            document.getElementById('total2').innerHTML = (sevencoins * numberY);
+        });
+
+        document.getElementById("multiply3").addEventListener("click", function (event) {
+            var elevencoins = parseInt(document.getElementById("elevencoins").value);
+            var numberZ = parseInt(document.getElementById("num3").value);
+
+            document.getElementById('total3').innerHTML = (elevencoins * numberZ);
+        });
+    </script>
+</body>
+
+</html>
+<!--<div class="col3">
+<input placeholder="numberx" id="numx">
+<br>
+<input placeholder="numbery" id="numy">
+<br>
+<button id="subtractbtn">Subtract Numbers</button>
+</div>
+
+document.getElementById("subtractbtn").addEventListener("click", function (event) {
+var numberx = parseInt(document.getElementById("numx").value);
+var numbery = parseInt(document.getElementById("numy").value);
+
+document.getElementById('total').innerHTML = (numberx - numbery);-->

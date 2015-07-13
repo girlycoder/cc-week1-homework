@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<link href="main.css" rel="stylesheet">
+
+<body>
+    <h1 id="total">
+    </h1>
+    <div class="col1">
+        <input placeholder="number1" id="num1">
+        <br>
+        <input placeholder="number2" id="num2">
+        <br>
+        <button id="addbtn">Add Numbers</button>
+
+    </div>
+
+    <div class="col2">
+        <input placeholder="numbera" id="numa">
+        <br>
+        <input placeholder="numberb" id="numb">
+        <br>
+        <button id="multiply">Multiply Numbers</button>
+    </div>
+
+    <div class="col3">
+        <input placeholder="numberx" id="numx">
+        <br>
+        <input placeholder="numbery" id="numy">
+        <br>
+        <button id="subtractbtn">Subtract Numbers</button>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        document.getElementById("addbtn").addEventListener("click", function (event) {
+            var number1 = parseInt(document.getElementById("num1").value);
+            var number2 = parseInt(document.getElementById("num2").value);
+
+            document.getElementById('total').innerHTML = (number1 + number2);
+        });
+
+        document.getElementById("multiply").addEventListener("click", function (event) {
+            var numbera = parseInt(document.getElementById("numa").value);
+            var numberb = parseInt(document.getElementById("numb").value);
+
+            document.getElementById('total').innerHTML = (numbera * numberb);
+        });
+
+        document.getElementById("subtractbtn").addEventListener("click", function (event) {
+            var numberx = parseInt(document.getElementById("numx").value);
+            var numbery = parseInt(document.getElementById("numy").value);
+
+            document.getElementById('total').innerHTML = (numberx - numbery);
+        });
+    </script>
+
+</body>
+
+
+
+</html>
